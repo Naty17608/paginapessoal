@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500&display=swap');
+        
+       
+
+        body{
+            background-color: rgba(233, 227, 227, 0.315);;
+            font-family: sans-serif;
+            font-size: 1em;
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-right: 290px;
+          
+        }
+
+        h1, p{
+            color: rgba(82, 72, 72, 0.897);
+            font-family: 'Montserrat Alternates', sans-serif;
+            
+        }
+    
+        input, button,textarea {
+            
+            font-size: 12pt;
+            color: black;
+            border-radius: 5px;
+            
+        }
+
+       label{
+
+        font-family: 'Montserrat Alternates', sans-serif;
+        color:rgba(82, 72, 72, 0.897);
+       
+       }
+
+
+
+        .campo input[type="text"], .campo input[type="email"], .campo textarea {
+            
+            border: 1px solid rgb(190, 181, 181);
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .grupo inpu{ 
+            display:block;
+            
+        }
+
+        /* Elemento de classe "botao" */
+        .botao {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 20px;
+            background: rgb(190, 181, 181);
+            margin-bottom: 1px;
+            color: black;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            
+            
+        }
+
+        /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+        .botao:hover {
+            background: #6e6972b9;
+            box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+            text-shadow: none;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <h1>Para entra contato com Natalie Portman</h1>
+     <p>Digite seu dados que entraremos em contato você</p>
+    <form>
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" id="nome" required>
+            </div>
+
+            
+            <div class="campo">
+                <label for="fone"><strong>Fone</strong></label>
+                <input type="text" " id="fone" required>
+            </div>
+        
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email"  id="email" required>
+            </div>
+        
+            <fieldset class="grupo">
+               
+                <div id="check">
+                    <ul>
+                    <label><strong>Selecione a Motivo do contato que utiliza:</strong></label><br><br>
+                    <input type="checkbox" name="motivo1" value="1" id="motivo1">
+                    <label for="motivo1">Contratação para eventos </label><br>
+                    <input type="checkbox" name="motivo2" value="2" id="motivo2">
+                    <label for="motivo2"> Para pedir mais informações sobre os papeis e filmes feitos pela Natalie Portman</label><br>
+                    <input type="checkbox" name="motivo3" value="3"id="motivo3" >
+                    <label for="motivo3">Para mostra seu projeto de filme</label><br>
+                    <input type="checkbox"name="motivo4" value="4"id="motivo4" ">
+                    <label for="motivo4"> Solicitar autografo e foto com Natalie Portman</label><br>
+                    
+                </ul>
+                    
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="Comentarios"><strong>Comentários gerais</strong></label>
+                <textarea rows="6" style="width: 26em" id="Comentarios"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Eviar </button>  
+            
+
+
+    </form>
+
+</body>
+</html>
+
+<!-- Deve ser uma página separada com link na página principal..
+Solicite os seguintes dados
+•	Nome – Obrigatório.
+•	Fone – Obrigatório.
+•	E-mail – Obrigatório.
+•	Motivo do contato. (Em motivo do contato faça uma pré-seleção das possibilidades e exiba para o usuário clicar sobre)
+•	Comentários gerais -->
